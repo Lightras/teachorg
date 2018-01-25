@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{pageTitle}}</title>
+
+    <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+
+</head>
+<body ng-cloak>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-between" ng-controlller="NavbarController">
+    <div class="d-flex">
+        <a class="navbar-brand" href="#">TeachOrg</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" ng-hide="hideNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/schedule">Розклад</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/groups">Класи</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/subjects">Предмети</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/semesters">Семестри</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div ng-hide="hideNavbar">
+        <a href="" title="Перейти в особистий кабінет" class="text-white font-weight-bold ">{{user.username}}</a>
+        <button class="btn px-2 py-1 btn-dark bg-light" onclick="window.location = '/login'">
+            <img src="{% static 'images/logout.png' %}" alt="Вийти">
+        </button>
+    </div>
+</nav>
+
+{% block content %}
+{% endblock %}
+
+<script src="{% static 'bower_components/jquery/dist/jquery.js' %}"></script>
+<script src="{% static 'bower_components/angular/angular.js' %}"></script>
+<script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'scripts/main.js' %}"></script>
+<script src="{% static 'scripts/controllers.js' %}"></script>
+
+<script>
+</script>
+
+</body>
+</html>

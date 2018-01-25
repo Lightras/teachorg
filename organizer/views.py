@@ -36,6 +36,16 @@ def registration(request):
         return redirect('login')
     return render(request, 'registration.html')
 
+def semesters(request):
+    return render(request, 'semesters.html')
+
+def schedule(request):
+    return render(request, 'schedule.html')
+
+def subjects(request):
+    return render(request, 'subjects.html')
+
+
 def groupsdata(request):
     semester = Semester.objects.filter(user=request.user).first()
     groups = Group.objects.filter(semester=semester)

@@ -2,3 +2,110 @@
   font-size: 45px;
 }
 
+.class-plate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  padding: 5px 15px;
+  margin: 7px;
+}
+
+.class-plate.active {
+  background: #007BFF;
+  color: white;
+}
+
+.class-plate.active:hover {
+  background: #007BFF;
+  color: white;
+  cursor: auto;
+  text-decoration: none;
+}
+
+.class-plate:hover {
+  background: whitesmoke;
+  cursor: pointer;
+}
+
+.delete {
+  display: none;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+.delete:hover {
+  border: 1px solid black;
+  background: #ffb397;
+}
+
+.class-plate:hover .delete {
+  display: block;
+}
+
+.pupils-table {
+  width: 600px;
+  text-align: center;
+}
+
+.pupils-table tr td:nth-child(2) {
+  text-align: left;
+}
+
+#groups-page .modal input {
+  width: 250px;
+}
+
+#groups-page .modal div {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+
+.semesters-table {
+  width: 600px;
+  text-align: center;
+}
+
+.semesters-table td, .semesters-table th {
+  vertical-align: middle !important;
+}
+
+.semesters-table tr.active {
+  background: rgba(144, 238, 144, 0.16);
+}
+
+
+
+#login-page .card {
+  width: 400px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+#login-page input {
+  text-align: center;
+}
+
+
+
+#reg-page .card {
+  width: 400px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+#reg-page input {
+  text-align: center;
+}

@@ -10,6 +10,11 @@ app.controller('GroupsController', ['$scope', '$http', function ($scope, $http) 
 
 }]);
 
-app.controller('LoginController', ['$scope', function ($scope) {
-    console.log('LoginController')
+app.controller('LoginController', ['$scope', '$rootScope', function ($scope, $rootScope) {
+}])
+
+app.controller('NavbarController', ['$scope', '$location', function($scope, $location){
+    console.log('hey NavbarController')
+    var url = $location.url
+    console.log(url)
 }])
