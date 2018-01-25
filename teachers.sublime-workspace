@@ -1,0 +1,1203 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"max",
+				"max_length"
+			],
+			[
+				"nu",
+				"null"
+			],
+			[
+				"com",
+				"companys\tstatement"
+			],
+			[
+				"akt",
+				"akts\tstatement"
+			],
+			[
+				"cus",
+				"customer_payment\tstatement"
+			],
+			[
+				"cal",
+				"calculations"
+			],
+			[
+				"db",
+				"db_index"
+			],
+			[
+				"orde",
+				"order_code"
+			],
+			[
+				"here",
+				"heretic_code"
+			],
+			[
+				"target",
+				"target_row"
+			],
+			[
+				"col",
+				"col-sm-4"
+			],
+			[
+				"this",
+				"this_row_paid"
+			],
+			[
+				"calc",
+				"calc_row"
+			],
+			[
+				"Com",
+				"Companys"
+			],
+			[
+				"str",
+				"strings_data"
+			],
+			[
+				"id",
+				"id_order"
+			],
+			[
+				"order_",
+				"order_by"
+			],
+			[
+				"quan",
+				"quantity_points"
+			],
+			[
+				"code",
+				"code_number"
+			],
+			[
+				"sta",
+				"staticfiles"
+			],
+			[
+				"her",
+				"heretic_code"
+			],
+			[
+				"log",
+				"logist"
+			],
+			[
+				"konst",
+				"konst"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"for",
+				"form-group"
+			],
+			[
+				"table",
+				"table_number\tstatement"
+			],
+			[
+				"tables",
+				"tables_len"
+			],
+			[
+				"fact",
+				"factproduct"
+			],
+			[
+				"last",
+				"last_update"
+			],
+			[
+				"las",
+				"last_message"
+			],
+			[
+				"chat",
+				"chat_last\tstatement"
+			],
+			[
+				"Cas",
+				"CASCADE\tfunction"
+			],
+			[
+				"total",
+				"total_all\tstatement"
+			],
+			[
+				"m",
+				"m\tstatement"
+			],
+			[
+				"pro",
+				"pro_mp\tstatement"
+			],
+			[
+				"mo",
+				"month"
+			],
+			[
+				"get",
+				"get_widget\tfunction"
+			],
+			[
+				"tota",
+				"total_paid"
+			],
+			[
+				"tot",
+				"total_sum"
+			],
+			[
+				"agree",
+				"agreed_sum"
+			],
+			[
+				"fac",
+				"fact_delta"
+			],
+			[
+				"order",
+				"order_code\tstatement"
+			],
+			[
+				"price",
+				"price_offered"
+			],
+			[
+				"akt_",
+				"akt_date"
+			],
+			[
+				"akt_more",
+				"akt_more_confirm"
+			],
+			[
+				"col-xs",
+				"col-xs-3"
+			],
+			[
+				"Лазерн",
+				"Лазерный"
+			],
+			[
+				"date",
+				"datetime\tclass"
+			],
+			[
+				"mp",
+				"mp_all\tstatement"
+			],
+			[
+				"minute",
+				"minute_all\tstatement"
+			],
+			[
+				"hou",
+				"hour_all\tstatement"
+			],
+			[
+				"b",
+				"b\tstatement"
+			],
+			[
+				"more",
+				"more_spent_hour"
+			],
+			[
+				"a",
+				"already_done"
+			],
+			[
+				"alread",
+				"already_done"
+			],
+			[
+				"alre",
+				"already_done"
+			],
+			[
+				"mon",
+				"months_report"
+			],
+			[
+				"das",
+				"dashboard"
+			],
+			[
+				"is_",
+				"is_authenticated"
+			],
+			[
+				"se",
+				"select\tTag"
+			],
+			[
+				"exc",
+				"except"
+			],
+			[
+				"t",
+				"t\tstatement"
+			],
+			[
+				"ndv",
+				"nvd3-line"
+			],
+			[
+				"n",
+				"n\tstatement"
+			],
+			[
+				"pric",
+				"price_offered"
+			],
+			[
+				"di",
+				"di\tstatement"
+			],
+			[
+				"Profile",
+				"ProfileForm"
+			],
+			[
+				"km",
+				"km\tstatement"
+			],
+			[
+				"series",
+				"seriesData"
+			],
+			[
+				"dashboard",
+				"dashboard_users"
+			],
+			[
+				"cu",
+				"customer_cost"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"profile",
+				"profile_form\tstatement"
+			],
+			[
+				"profi",
+				"profile_form\tstatement"
+			],
+			[
+				"Pro",
+				"ProfileForm\tclass"
+			],
+			[
+				"border-",
+				"border-color"
+			],
+			[
+				"stat",
+				"statuses"
+			],
+			[
+				"co",
+				"constructor_table_item\tstatement"
+			],
+			[
+				"Co",
+				"Constructor_table_item\tclass"
+			],
+			[
+				"con",
+				"Constructor_table_item\tclass"
+			],
+			[
+				"Cons",
+				"Constructor_table\tclass"
+			],
+			[
+				"al",
+				"already_spent_minute"
+			],
+			[
+				"alrea",
+				"already_spent_recalc"
+			],
+			[
+				"th",
+				"this_row_spent"
+			],
+			[
+				"already",
+				"already_spent"
+			],
+			[
+				"mr",
+				"more_spent_minute"
+			],
+			[
+				"mor",
+				"more_spent_hour"
+			],
+			[
+				"input",
+				"input_more"
+			],
+			[
+				"ins",
+				"instance\tparam"
+			],
+			[
+				"check",
+				"checkbox"
+			],
+			[
+				"Constu",
+				"Constructor_table_item\tclass"
+			],
+			[
+				"is",
+				"is_valid"
+			],
+			[
+				"ex",
+				"except"
+			],
+			[
+				"pr",
+				"print\tkeyword"
+			],
+			[
+				"ar",
+				"archive2"
+			],
+			[
+				"Dec",
+				"DecimalField\tclass"
+			],
+			[
+				"mate",
+				"material_edit"
+			],
+			[
+				"service",
+				"service\tstatement"
+			],
+			[
+				"comp",
+				"company\tstatement"
+			],
+			[
+				"lo",
+				"logist\tstatement"
+			],
+			[
+				"HttpR",
+				"HttpResponseRedirect\tclass"
+			],
+			[
+				"pa",
+				"payments_len\tstatement"
+			],
+			[
+				"pay",
+				"payments_len\tstatement"
+			],
+			[
+				"payments",
+				"payments_len\tstatement"
+			],
+			[
+				"paymn",
+				"payments"
+			],
+			[
+				"len",
+				"len_rows\tstatement"
+			],
+			[
+				"string",
+				"string_number"
+			],
+			[
+				"fg",
+				"fg\tstatement"
+			],
+			[
+				"ser",
+				"serialize\tfunction"
+			],
+			[
+				"Or",
+				"OrderForm\tclass"
+			],
+			[
+				"tag",
+				"calc_tags"
+			],
+			[
+				"type",
+				"typeproduct"
+			],
+			[
+				"end",
+				"endTime"
+			],
+			[
+				"qa",
+				"quantity"
+			],
+			[
+				"Forei",
+				"ForeignKey\tclass"
+			],
+			[
+				"user",
+				"user__last_name"
+			],
+			[
+				"serv",
+				"serv_code"
+			],
+			[
+				"conten",
+				"content_type"
+			],
+			[
+				"jso",
+				"json_data"
+			],
+			[
+				"la",
+				"last_name"
+			],
+			[
+				"view",
+				"views\tmodule"
+			],
+			[
+				"ma",
+				"max_length\tparam"
+			],
+			[
+				"forms",
+				"forms_list\tfunction"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"u",
+				"urls\tmodule"
+			],
+			[
+				"ren",
+				"render_to_response\tfunction"
+			],
+			[
+				"all",
+				"all_data\tstatement"
+			],
+			[
+				"as",
+				"asdasd"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "organizer/models.py",
+			"settings":
+			{
+				"buffer_size": 1762,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "teachers_organizer/settings.py",
+			"settings":
+			{
+				"buffer_size": 3349,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "organizer/admin.py",
+			"settings":
+			{
+				"buffer_size": 2355,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 254.0,
+		"last_filter": "Package Control: Ins",
+		"selected_items":
+		[
+			[
+				"Package Control: Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: SFTP",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"theme ",
+				"Material Theme: Activate theme"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"instaaa",
+				"Package Control: Install Package"
+			],
+			[
+				"bitbucket",
+				"Bitbucket: Find Pull Request"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"git q",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"theme",
+				"Material Theme: Activate theme"
+			],
+			[
+				"",
+				"View: Toggle Menu"
+			]
+		],
+		"width": 522.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/home/brutal/dev/kpt/shedule/settings.py",
+		"/home/brutal/dev/ingress_site/ingress/ingress/settings.py",
+		"/home/brutal/qalibriti/Qalibriti/settings.py",
+		"/home/brutal/dev/bowling/track/models.py",
+		"/home/brutal/dev/bowling/papashon/models.py",
+		"/home/brutal/dev/shedule_organize/teachers_organizer/teachers_organizer/settings.py",
+		"/home/brutal/dev/bowling/source/templates/base.html",
+		"/home/brutal/qalibriti/forms/views.py",
+		"/home/brutal/qalibriti/forms/models.py",
+		"/home/brutal/qalibriti/Qalibriti/urls.py",
+		"/home/brutal/dev/shedule_organize/teachers_organizer/manage.py",
+		"/home/brutal/qalibriti/Qalibriti/templates/order/calc.html",
+		"/home/brutal/qalibriti/forms/processors.py",
+		"/home/brutal/qalibriti/Qalibriti/templates/kanban-orders.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/payment_row.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/payments.html",
+		"/home/brutal/qalibriti/manage.py",
+		"/home/brutal/qalibriti/Qalibriti/static/assets/js/payments.js",
+		"/home/brutal/qalibriti/forms/admin.py",
+		"/home/brutal/qalibriti/Qalibriti/static/assets/js/calc.js",
+		"/var/www/html/config.inc.php",
+		"/home/brutal/dev/bowling/api_papashon/cardsystem/index.php",
+		"/etc/apache2/conf-available/php7.0-fpm.conf",
+		"/home/brutal/dev/bowling/api papashon/cardsystem/api/application/User.php",
+		"/home/brutal/qalibriti/Qalibriti/static/pages/css/pages.css",
+		"/home/brutal/qalibriti/Qalibriti/static/assets/js/getCalcData.js",
+		"/home/brutal/dev/bowling/manage.py",
+		"/home/brutal/qalibriti/forms/templatetags/divide.py",
+		"/home/brutal/qalibriti/forms/urls.py",
+		"/home/brutal/qalibriti/Qalibriti/templates/order/block_code.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/base.html",
+		"/home/brutal/qalibriti/forms/forms.py",
+		"/home/brutal/qalibriti/Qalibriti/templates/constructor_features/company.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/constructor_features/company_add.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/constructor_features/company_edit.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/order/constructor_table_code.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/time_trekker.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/order/edit_order.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/kanban.html",
+		"/home/brutal/qalibriti/Qalibriti/static/assets/js/getCopyOrder.js",
+		"/home/brutal/qalibriti/forms/templatetags/stages_tags.py",
+		"/home/brutal/qalibriti/Qalibriti/static/assets/css/style.css",
+		"/home/brutal/qalibriti/Qalibriti/templates/manage users/user_edit.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/manage users/user_add.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/manage users/users.html",
+		"/home/brutal/dev/bowling/db.json",
+		"/home/brutal/Завантаження/Telegram Desktop/тз.txt",
+		"/home/brutal/dev/btc/BTCexchange/chat_app/settings.py",
+		"/home/brutal/qalibriti/Qalibriti/templates/constructor_features/material.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/order/archive.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/registration/login.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/constructor_features/material_add.html",
+		"/home/brutal/qalibriti/Qalibriti/static/assets/js/dash_board_widget.js",
+		"/home/brutal/.config/sublime-text-3/Packages/User/sftp_servers/serv.net",
+		"/tmp/sublime-sftp-browse-1510158627/serv.net/var/www/html/game/enterpreneur/overview.php",
+		"/home/brutal/qalibriti/Qalibriti/static/assets/js/time_trekker.js",
+		"/home/brutal/Drivers/Drivers/settings.py",
+		"/home/brutal/qalibriti/Qalibriti/static/assets/js/scripts.js",
+		"/home/brutal/qalibriti/Qalibriti/static/js/hotkey.js",
+		"/home/brutal/qalibriti/Qalibriti/templates/404.html",
+		"/home/brutal/Drivers/Drivers/landing/urls.py",
+		"/home/brutal/Drivers/Drivers/registration/models.py",
+		"/home/brutal/Завантаження/Telegram Desktop/bundle/demo/html/404.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/dashboard.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/manage users/password_change.html",
+		"/home/brutal/qalibriti/Qalibriti/static/assets/js/NewMessage.js",
+		"/home/brutal/Drivers/dump3.sql",
+		"/home/brutal/qalibriti/Qalibriti/templates/dashboard_report.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/order/copied_order.html",
+		"/home/brutal/Завантаження/Telegram Desktop/bundle/widgets/widget_graph_widget/js/widget.js",
+		"/home/brutal/qalibriti/Qalibriti/static/js/widget.js",
+		"/home/brutal/qalibriti/Qalibriti/templates/test.html",
+		"/home/brutal/Завантаження/Telegram Desktop/assets/index.html",
+		"/home/brutal/Завантаження/Telegram Desktop/assets/js/basic.js",
+		"/home/brutal/qalibriti/forms/apps.py",
+		"/home/brutal/qalibriti/Qalibriti/templates/constructor_features/material_edit.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/order/implemented.html",
+		"/home/brutal/qalibriti/Qalibriti/static/css/widget.css",
+		"/home/brutal/qalibriti/Qalibriti/static/assets/plugins/nvd3/nv.d3.min.css",
+		"/home/brutal/qalibriti/Qalibriti/static/populationByCountryByYear.csv",
+		"/home/brutal/qalibriti/Qalibriti/templates/populationByCountryByYear.csv",
+		"/home/brutal/Завантаження/Telegram Desktop/bundle/widgets/widget_pie_chart/js/widget.js",
+		"/home/brutal/Завантаження/Telegram Desktop/bundle/widgets/widget_pie_chart/index.html",
+		"/home/brutal/Завантаження/Telegram Desktop/bundle/widgets/widget_graph_widget/index.html",
+		"/home/brutal/qalibriti/Qalibriti/static/widget/stacked_bar_widget/js/widget.js",
+		"/home/brutal/qalibriti/Qalibriti/templates/dashboard/dashboard_users.html",
+		"/home/brutal/Завантаження/Telegram Desktop/bundle/widgets/widget_stacked_bar_widget/index.html",
+		"/home/brutal/qalibriti/Qalibriti/static/widget/stacked_bar_widget/js/charts.json",
+		"/home/brutal/qalibriti/Qalibriti/static/assets/js/material_table.js",
+		"/home/brutal/qalibriti/forms/templatetags/coma_dot.py",
+		"/home/brutal/qalibriti/lib64/python3.5/site-packages/django/conf/locale/ru/formats.py",
+		"/home/brutal/qalibriti/lib/python3.5/site-packages/django/conf/locale/ru/formats.py",
+		"/home/brutal/qalibriti/Qalibriti/templates/constructor_table_code.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/edit_order.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/calc.html",
+		"/home/brutal/kpt/shedule/urls.py",
+		"/home/brutal/kpt/maps/views.py",
+		"/home/brutal/kpt/shedule/settings.py",
+		"/home/brutal/kpt/shedule/templates/base.html",
+		"/home/brutal/kpt/maps/urls.py",
+		"/home/brutal/Drivers/Drivers/static/landing/js/newGetData.js",
+		"/home/brutal/Drivers/Drivers/landing/views.py",
+		"/home/brutal/Drivers/Drivers/accounts/models.py",
+		"/home/brutal/Drivers/Drivers/templates/landing/preset.html",
+		"/home/brutal/Drivers/Drivers/static/landing/js/data.json",
+		"/home/brutal/Drivers/Drivers/static/landing/js/newMath.js",
+		"/home/brutal/Drivers/Drivers/static/landing/js/finalData.js",
+		"/home/brutal/Drivers/Drivers/templates/landing/final.html",
+		"/home/brutal/Drivers/Drivers/templates/landing/choose.html",
+		"/home/brutal/Drivers/Drivers/accounts/views.py",
+		"/home/brutal/qalibriti/forms/templatetags/time.py",
+		"/home/brutal/Drivers/Drivers/static/landing/js/lang.js",
+		"/home/brutal/Drivers/Drivers/templates/landing/action.html",
+		"/home/brutal/Drivers/Drivers/templates/registration/login.html",
+		"/home/brutal/Drivers/Drivers/templates/registration/logout.html",
+		"/home/brutal/Drivers/Drivers/static/landing/js/chooseActions.js",
+		"/home/brutal/qalibriti/Qalibriti/templates/material_add.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/material_edit.html",
+		"/home/brutal/Drivers/Drivers/urls.py",
+		"/home/brutal/qalibriti/Qalibriti/templates/company_edit.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/company.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/material.html",
+		"/home/brutal/qalibriti/Qalibriti/templates/archive.html",
+		"/home/brutal/Drivers/Drivers/accounts/admin.py",
+		"/home/brutal/Drivers/Drivers/landing/models.py",
+		"/home/brutal/Drivers/db.json",
+		"/home/brutal/pythoncode/barcode.py",
+		"/home/brutal/Drivers/Drivers/wsgi.py"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"/home/brutal/qalibriti/Qalibriti/templates",
+			"/home/brutal/qalibriti/Qalibriti/static/assets",
+			"/home/brutal/qalibriti/Qalibriti/static/js",
+			"/home/brutal/qalibriti/Qalibriti/static/assets/js",
+			"/home/brutal/qalibriti/Qalibriti",
+			"/home/brutal/qalibriti/Qalibriti/static",
+			"/home/brutal/qalibriti/Qalibriti",
+			"/home/brutal/qalibriti/Qalibriti/templates",
+			"/home/brutal/qalibriti/Qalibriti/templates/order",
+			"/home/brutal/qalibriti",
+			"/home/brutal/qalibriti/Qalibriti/static",
+			"/home/brutal/qalibriti/forms",
+			"/home/brutal/qalibriti/Qalibriti/static",
+			"/home/brutal/qalibriti/Qalibriti/templates",
+			"/home/brutal/qalibriti/Qalibriti",
+			"/home/brutal/qalibriti/Qalibriti/static",
+			"/home/brutal/qalibriti",
+			"/home/brutal/qalibriti/Qalibriti/static/assets/js",
+			"/home/brutal/qalibriti/Qalibriti/templates",
+			"/home/brutal/qalibriti/Qalibriti/static/assets/js",
+			"/home/brutal/qalibriti/Qalibriti/static",
+			"/home/brutal/qalibriti/Qalibriti",
+			"/home/brutal/qalibriti/Qalibriti/static",
+			"/home/brutal/qalibriti/Qalibriti/static/assets",
+			"/home/brutal/qalibriti/Qalibriti/static",
+			"/home/brutal/qalibriti/Qalibriti/static/assets/js",
+			"/home/brutal/qalibriti/Qalibriti/static",
+			"/home/brutal/qalibriti/Qalibriti/templates",
+			"/home/brutal/qalibriti",
+			"/home/brutal/qalibriti/Qalibriti",
+			"/home/brutal/qalibriti/Qalibriti/static",
+			"/home/brutal/qalibriti/registration",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Subject",
+			"Pupil",
+			"Group",
+			"')\n",
+			"Group",
+			"', ",
+			"Provisor",
+			"()\n",
+			"code7",
+			"related",
+			"kanban",
+			"form_ka",
+			"forms_ka",
+			"payments(",
+			"').",
+			"('",
+			"forms_kan",
+			"|stringformat:\"s\"",
+			"payment(",
+			"kanban",
+			"all()",
+			"console.log",
+			"already_paid_recalc",
+			"spent",
+			"akt_number",
+			"akt",
+			"Akt",
+			"replace",
+			"quantity_per_item",
+			"late_fee",
+			">\n",
+			"payments",
+			"kanban",
+			"1.25",
+			"quantity_per_item",
+			"per_item",
+			"_per_item",
+			"payments(",
+			"payments",
+			"add",
+			"edizm",
+			"payments",
+			"payment",
+			"1.25",
+			"edizm",
+			"1.",
+			"1.125",
+			"$(document)",
+			"$(document).on('change'",
+			"console.log",
+			"collapse",
+			"paid_number",
+			"paid",
+			"each",
+			"total_paid",
+			"already_paid",
+			"alredy",
+			"kanban",
+			"already_paid_recalc",
+			"print",
+			"code7",
+			"626262",
+			"save_order",
+			"row_tem",
+			"ед",
+			"row_templ",
+			"coma_dot",
+			"row",
+			"changeEdizm",
+			"hidden",
+			"supplier",
+			"company",
+			"edit_f",
+			"km",
+			"123",
+			"company",
+			"компании",
+			"rows_payment_tables",
+			"edit",
+			"payments",
+			"addComp",
+			"each",
+			"addCompanies",
+			"частично",
+			"calc.js",
+			"quantity",
+			"else",
+			"kanban",
+			"style.css",
+			"forloop",
+			"data-table_number",
+			"data-table",
+			"        ",
+			"x.id",
+			"asd",
+			"x.id",
+			"x.order_code",
+			"trekker",
+			"supplier",
+			"material",
+			"matherial",
+			"time",
+			"connector",
+			"ltError.gif",
+			"icons_96x256.gif",
+			"recommended_commission",
+			"table",
+			"Конструктор",
+			"chat",
+			"collapse_all()",
+			"open_all()",
+			"трудозатрат",
+			"трудозатрати",
+			"цена предложения",
+			"свернуть",
+			"payments",
+			"DoesNotExist",
+			"kanban",
+			"не оплачено",
+			"how",
+			"how_late",
+			"late_fee",
+			"save",
+			"form-control price",
+			"save",
+			"konstryktor",
+			"konstryktor1",
+			"pm"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "organizer/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1762,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								100,
+								100
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"git_gutter_is_enabled": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "teachers_organizer/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3349,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2380,
+								2380
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 663.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "organizer/admin.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2355,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								438,
+								438
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"git_gutter_is_enabled": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 61.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 114.0
+	},
+	"output.find_results":
+	{
+		"height": 132.0
+	},
+	"output.git":
+	{
+		"height": 72.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 120.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 40.0
+	},
+	"pinned_build_system": "",
+	"project": "teachers.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 197.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

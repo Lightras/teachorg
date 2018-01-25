@@ -1,0 +1,229 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Класи</title>
+
+    <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
+
+    <style>
+        @import "{% static 'styles/main.css' %}";
+
+        .class-plate {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            font-size: 30px;
+            font-weight: bold;
+            position: relative;
+            padding: 5px 15px;
+            margin: 7px;
+        }
+
+        .class-plate.active {
+            background: #007BFF;
+            color: white;
+        }
+
+        .class-plate.active:hover {
+            background: #007BFF;
+            color: white;
+            cursor: auto;
+            text-decoration: none;
+        }
+
+        .class-plate:hover {
+            background: whitesmoke;
+            cursor: pointer;
+        }
+
+        .delete {
+            display: none;
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            border: 1px solid transparent;
+            border-radius: 2px;
+        }
+
+        .delete:hover {
+            border: 1px solid black;
+            background: #ffb397;
+        }
+
+        .class-plate:hover .delete {
+            display: block;
+        }
+
+        .pupils-table {
+            width: 600px;
+            text-align: center;
+        }
+
+        .pupils-table tr td:nth-child(2) {
+            text-align: left;
+        }
+
+        #groups-page .modal input {
+            width: 250px;
+        }
+
+        #groups-page .modal div {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-between">
+    <div class="d-flex">
+        <a class="navbar-brand" href="#">TeachOrg</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Розклад</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Класи</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Предмети</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <a href="" title="Перейти в особистий кабінет" class="text-white font-weight-bold ">{{user.username}}</a>
+        <button class="btn px-2 py-1 btn-dark bg-light">
+            <img src="{% static 'images/logout.png' %}" alt="Вийти">
+        </button>
+    </div>
+</nav>
+
+<div id="groups-page" ng-controller="GroupsController">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <br><br>
+                <h2>Ваші класи:</h2>
+                <div class="class-plates d-flex">
+                    <a class="class-plate" ng-repeat="group in groups">
+                        <img class="delete" src="{% static 'images/delete-16.png' %}">
+                        <div class="class-name" ng-bind="group.group__name"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <br><br>
+                <h2>11A</h2>
+                <span>3 учні</span>
+                <br><br>
+                <h5>Список учнів</h5>
+
+                <table class="table table-bordered pupils-table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>ПІБ</th>
+                        <th>Дата народження</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    {% for pupil in pupils %}
+                    <tr>
+                        <td>{{forloop.counter}}</td>
+                        <td>{{pupil.first_name}} {{pupil.last_name}}</td>
+                        <td>{{pupil.dateBirth}}</td>
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+
+                <button class="btn btn-primary" data-toggle="modal" data-target="#add-pupil-modal">Додати учня</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="add-group-modal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Додати клас</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Назва класу">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Додати</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Відмінти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="add-pupil-modal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Додати учня</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Прізвище">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Ім'я">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="По-батькові">
+                        </div>
+                        <div class="form-group">
+                            <input type="date" class="form-control" placeholder="Прізвище">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Додати</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Відмінти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="{% static 'bower_components/jquery/dist/jquery.js' %}"></script>
+<script src="{% static 'bower_components/angular/angular.js' %}"></script>
+<script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'scripts/main.js' %}"></script>
+<script src="{% static 'scripts/controllers.js' %}"></script>
+
+<script>
+</script>
+
+</body>
+</html>
