@@ -9,22 +9,26 @@
                 <br><br>
                 <h2>Ваші класи:</h2>
                 <div class="class-plates d-flex">
-                    <a class="class-plate" ng-repeat="group in groups">
-                        <img class="delete" src="{% static 'images/delete-16.png' %}">
-                        <div class="class-name" ng-bind="group.group__name"></div>
+                    <a href="" class="class-plate" ng-repeat="group in groups" ng-click="selectGroup(group.name)"
+                                           ng-class="{'active': group.name === selectedGroup.name}">
+                        <img class="delete" src="{% static 'images/delete-16.png' %}" ng-click="editGroup(group)">
+                        <div class="class-name" ng-bind="group.name"></div>
+                    </a>
+                    <a class="class-plate" ng-click="addGroup()">
+                        <img class="plus" src="{% static 'images/plus.png' %}">
                     </a>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" ng-show="selectedGroup">
             <div class="col">
                 <br><br>
-                <h2>11A</h2>
-                <span>3 учні</span>
+                <h2 ng-bind="selectedGroup.name"></h2>
+                <span>Кількість учнів: <span ng-bind="selectedGroup.pupils.length"></span></span>
                 <br><br>
-                <h5>Список учнів</h5>
+                <h5 ng-show="selectedGroup.pupils.length">Список учнів</h5>
 
-                <table class="table table-bordered pupils-table">
+                <table ng-show="selectedGroup.pupils.length" class="table table-bordered pupils-table">
                     <thead>
                     <tr>
                         <th>#</th>
@@ -34,17 +38,16 @@
                     </thead>
                     <tbody>
 
-                    {% for pupil in pupils %}
-                    <tr>
-                        <td>{{forloop.counter}}</td>
-                        <td>{{pupil.first_name}} {{pupil.last_name}}</td>
-                        <td>{{pupil.dateBirth}}</td>
+                    <tr ng-repeat="pupil in selectedGroup.pupils" ng-click="showEditPupilModal(pupil)">
+                        <td ng-bind="$index + 1"></td>
+                        <td ng-bind="pupil.first_name + ' ' + pupil.middle_name + ' ' + pupil.last_name"></td>
+                        <td ng-bind="pupil.dateBirth | date:'dd/MM/yyyy'"></td>
                     </tr>
-                    {% endfor %}
                     </tbody>
+
                 </table>
 
-                <button class="btn btn-primary" data-toggle="modal" data-target="#add-pupil-modal">Додати учня</button>
+                <button class="btn btn-primary" ng-click="showAddPupilForm()">Додати учня</button>
             </div>
         </div>
     </div>
@@ -61,13 +64,40 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Назва класу">
+                            <input type="text" class="form-control" maxlength="4"
+                                   ng-model="newGroup.name" placeholder="Назва класу" required>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Додати</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Відмінти</button>
+                    <button type="button" class="btn btn-primary" ng-click="confirmAddGroup()">Додати</button>
+                    <button type="button" class="btn btn-secondary" ng-click="cancelAddGroup()">Відмінти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="edit-group-modal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Редагувати клас</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" maxlength="4"
+                                   ng-model="editedGroup.name" placeholder="Назва класу" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" ng-click="deleteGroup()">Видалити</button>
+                    <button type="button" class="btn btn-primary" ng-click="confirmEditGroup()">Зберегти</button>
+                    <button type="button" class="btn btn-secondary" ng-click="cancelEditGroup()">Відмінти</button>
                 </div>
             </div>
         </div>
@@ -83,24 +113,58 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form name="addPupilForm">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Прізвище">
+                            <input type="text" class="form-control" ng-model="newPupil.last_name" placeholder="Прізвище" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Ім'я">
+                            <input type="text" class="form-control" ng-model="newPupil.first_name" placeholder="Ім'я" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="По-батькові">
+                            <input type="text" class="form-control" ng-model="newPupil.middle_name" placeholder="По-батькові" required>
                         </div>
                         <div class="form-group">
-                            <input type="date" class="form-control" placeholder="Прізвище">
+                            <input type="date" ng-model="newPupil.dateBirth" class="form-control" required>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Додати</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Відмінти</button>
+                    <button type="button" class="btn btn-primary" ng-click="addPupil()">Додати</button>
+                    <button type="button" class="btn btn-secondary" ng-click="cancelAddPupil()">Відмінти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="edit-pupil-modal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Редагувати</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="selectedPupil.first_name" placeholder="Прізвище">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="selectedPupil.middle_name" placeholder="Ім'я">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="selectedPupil.last_name" placeholder="По-батькові">
+                        </div>
+                        <div class="form-group">
+                            <input type="date" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" ng-click="deletePupil()">Видалити</button>
+                    <button type="button" class="btn btn-primary" ng-click="savePupil()" >Зберегти</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" ng-click="cancelEdit()">Відмінти</button>
                 </div>
             </div>
         </div>

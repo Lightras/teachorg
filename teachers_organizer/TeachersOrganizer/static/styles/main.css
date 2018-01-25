@@ -45,6 +45,7 @@
 .delete:hover {
   border: 1px solid black;
   background: #ffb397;
+  cursor: pointer;
 }
 
 .class-plate:hover .delete {

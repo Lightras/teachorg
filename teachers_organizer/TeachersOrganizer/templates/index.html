@@ -37,7 +37,7 @@
     </div>
     <div ng-hide="hideNavbar">
         <a href="" title="Перейти в особистий кабінет" class="text-white font-weight-bold ">{{user.username}}</a>
-        <button class="btn px-2 py-1 btn-dark bg-light" onclick="window.location = '/login'">
+        <button class="btn px-2 py-1 btn-dark bg-light" onclick="window.location = '/logout'">
             <img src="{% static 'images/logout.png' %}" alt="Вийти">
         </button>
     </div>
@@ -47,6 +47,7 @@
 {% endblock %}
 
 <script src="{% static 'bower_components/jquery/dist/jquery.js' %}"></script>
+<script src="{% static 'bower_components/lodash/dist/lodash.js' %}"></script>
 <script src="{% static 'bower_components/angular/angular.js' %}"></script>
 <script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
 <script src="{% static 'scripts/main.js' %}"></script>
