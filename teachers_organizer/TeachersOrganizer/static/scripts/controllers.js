@@ -15,6 +15,12 @@ app.controller('LoginController', ['$scope', '$rootScope', function ($scope, $ro
 
 app.controller('NavbarController', ['$scope', '$location', function($scope, $location){
     console.log('hey NavbarController')
-    var url = $location.url
-    console.log(url)
+    var url = window.location.pathname;
+    console.log(window.location)
+
+   if(url == '/login/' || url == '/registration/') {
+        $scope.hideNavbar = true;
+   } else {
+        $scope.hideNavbar = false;
+   }
 }])
