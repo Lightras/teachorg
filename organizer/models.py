@@ -15,6 +15,7 @@ class Semester(models.Model):
     start_date = models.DateField(null=True)
     end_date = models.DateField(null=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+    is_active = models.NullBooleanField(null=True)
 
     def __str__(self):
         return str(self.year)

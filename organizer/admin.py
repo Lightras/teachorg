@@ -20,7 +20,7 @@ class SemesterAdmin(admin.ModelAdmin):
     list_display = ('number', 'year')
     fieldsets = (
         ('Semester info', {
-         'fields': ('year', 'number', 'user', 'start_date', 'end_date')
+         'fields': ('year', 'number', 'user', 'start_date', 'end_date', 'is_active')
          }),
     )
 

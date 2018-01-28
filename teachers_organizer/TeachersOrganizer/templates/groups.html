@@ -63,6 +63,7 @@
                 </div>
                 <div class="modal-body">
                     <form>
+                        {% csrf_token %}
                         <div class="form-group">
                             <input type="text" class="form-control" maxlength="4"
                                    ng-model="newGroup.name" placeholder="Назва класу" required>
@@ -148,22 +149,22 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                            <input type="text" class="form-control" ng-model="selectedPupil.first_name" placeholder="Прізвище">
+                            <input type="text" class="form-control" ng-model="editedPupil.first_name" placeholder="Прізвище">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" ng-model="selectedPupil.middle_name" placeholder="Ім'я">
+                            <input type="text" class="form-control" ng-model="editedPupil.middle_name" placeholder="Ім'я">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" ng-model="selectedPupil.last_name" placeholder="По-батькові">
+                            <input type="text" class="form-control" ng-model="editedPupil.last_name" placeholder="По-батькові">
                         </div>
                         <div class="form-group">
-                            <input type="date" class="form-control">
+                            <input type="date" class="form-control" ng-model="editedPupil.dateBirth">
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" ng-click="deletePupil()">Видалити</button>
-                    <button type="button" class="btn btn-primary" ng-click="savePupil()" >Зберегти</button>
+                    <button type="button" class="btn btn-primary" ng-click="confirmEditPupil()" >Зберегти</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal" ng-click="cancelEdit()">Відмінти</button>
                 </div>
             </div>

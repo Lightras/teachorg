@@ -1,0 +1,5 @@
+cx-Oracle==6.1
+Django==2.0.1
+django-angular==2.0.0
+pytz==2017.3
+simplejson==3.13.2
