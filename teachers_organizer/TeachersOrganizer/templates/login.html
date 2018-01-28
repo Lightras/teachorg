@@ -1,9 +1,30 @@
-{% extends 'index.html' %}
 {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Логін</title>
 
-{% block content %}
+    <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
 
-<!--<div id="login-page" ng-controller="LoginController">-->
+    <style>
+        #login-page .card {
+            width: 400px;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        #login-page input {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">TeachOrg</a>
+</nav>
+
 <div id="login-page">
     <div class="card">
         <div class="card-header">Ласкаво просимо!</div>
@@ -24,13 +45,23 @@
                 <div class="form-group">
                     <input type="text" name="username" class="form-control" id="login" placeholder="Логін">
                 </div>
-                <div class="form-group">
+                <div class="form-group is-invalid">
                     <input type="password" name="password" class="form-control" id="password" placeholder="Пароль">
                 </div>
-                <button type="submit" class="">Увійти</button>
+                <button type="submit" class="btn btn-primary is-invalid">Увійти</button>
                 <div>або <a href="/registration">зареєструватись</a></div>
             </form>
         </div>
     </div>
 </div>
-{% endblock %}
+
+
+<script src="{% static 'bower_components/jquery/dist/jquery.js' %}"></script>
+<script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+
+<script>
+
+</script>
+
+</body>
+</html>

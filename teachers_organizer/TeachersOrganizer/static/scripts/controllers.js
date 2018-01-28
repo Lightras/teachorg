@@ -96,10 +96,11 @@ app.controller('GroupsController', ['$scope', '$http', '$rootScope', function ($
             var csrf = $("[name='csrfmiddlewaretoken']").val();
 
             birthDate = new Date($scope.newPupil.dateBirth)
-            var dd = birthDate.getDate()
-            var mm = birthDate.getMonth()+1
+            var dd = birthDate.getUTCDate()
+            var mm = birthDate.getUTCMonth()+1
             var yyyy = birthDate.getFullYear()
             console.log(dd+'/'+mm+'/'+yyyy)
+
 
                 $.ajax({
                     type: 'POST',
@@ -139,8 +140,8 @@ app.controller('GroupsController', ['$scope', '$http', '$rootScope', function ($
             var csrf = $("[name='csrfmiddlewaretoken']").val();
 
             birthDate = new Date($scope.editedPupil.dateBirth)
-            var dd = birthDate.getDate()
-            var mm = birthDate.getMonth()+1
+            var dd = birthDate.getUTCDate()
+            var mm = birthDate.getUTCMonth()+1
             var yyyy = birthDate.getFullYear()
             console.log(dd+'/'+mm+'/'+yyyy)
 
