@@ -125,3 +125,11 @@ def groupsdata(request):
         return HttpResponse(data, content_type='application/json')
     else:
         return redirect('login')
+
+def semestersdata(request):
+    if request.user.is_authenticated:
+        semesters = Semester.objects.filter(user=request.user).values('id', 'year', 'number', 'start_date', 'end_date', 'is_active')
+        data = json.dumps(list(semesters), default=str)
+        return HttpResponse(data, content_type='application/json')
+    else:
+        return redirect('login')

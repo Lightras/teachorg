@@ -114,3 +114,15 @@
 .navbar-collapse.ng-hide {
     display: none !important;
 }
+
+.semesters-table .activate-btn {
+    visibility: hidden;
+}
+
+.semesters-table tr td:last-child {
+    width: 100px;
+}
+
+.semesters-table tr:hover .activate-btn {
+    visibility: visible;
+}

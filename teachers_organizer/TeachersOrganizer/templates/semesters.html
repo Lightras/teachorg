@@ -1,7 +1,8 @@
 {% extends 'index.html' %}
 {% load static %}
 {% block content %}
-<div id="semesters-page">
+<div id="semesters-page" ng-controller="SemestersController">
+    {% csrf_token %}
     <div class="container">
         <div class="row">
             <div class="col">
@@ -20,42 +21,29 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>2015/2016</td>
-                        <td>1</td>
-                        <td>01.09.2015</td>
-                        <td>29.12.2015</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2015/2016</td>
-                        <td>2</td>
-                        <td>15.01.2016</td>
-                        <td>30.05.2016</td>
+                    <tr ng-repeat="semester in semesters" ng-class="{'active': semester.is_active}" ng-click="showSemesterModal()">
+                        <td ng-bind="semester.year + '/' + (semester.year + 1)"></td>
+                        <td ng-bind="semester.number"></td>
+                        <td ng-bind="semester.start_date | date : 'dd-MM-yyyy'"></td>
+                        <td ng-bind="semester.end_date | date : 'dd-MM-yyyy'"></td>
                         <td>
-                            <button class="btn btn-info">Активувати</button>
+                            <span ng-if="semester.is_active">Активний</span>
+                            <button class="btn btn-info activate-btn" ng-if="!semester.is_active">Активувати</button>
                         </td>
-                    </tr>
-                    <tr class="active">
-                        <td>2016/2017</td>
-                        <td>1</td>
-                        <td>02.09.2016</td>
-                        <td>28.12.2016</td>
-                        <td>Активний</td>
                     </tr>
                     </tbody>
                 </table>
                 <br>
-                <button class="btn btn-primary" data-toggle="modal" data-target="#add-semester-modal">Додати семестр</button>
+                <button class="btn btn-primary" ng-click="showAddSemesterModal()">Додати семестр</button>
             </div>
         </div>
     </div>
 
-    <div id="add-semester-modal" class="modal fade" tabindex="-1">
+    <div id="edit-semester-modal" class="modal fade" tabindex="-1">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Додати cеместр</h5>
+                    <h5 class="modal-title">Редагувати cеместр</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -93,6 +81,58 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary">Додати</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Відмінти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="add-semester-modal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Додати cеместр</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form name="addSemesterForm">
+                        <div class="form-group row">
+                            <label for="studyYear" class="col-sm-5 col-form-label">Навчальний рік</label>
+                            <div class="col-sm-7">
+                                <select class="form-control" name="studyYear" id="studyYear"
+                                        ng-options="year - 1 as (year - 1 + '/' + year) for year in years"
+                                        ng-model="newSemester.year" required></select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="numberRadios" class="col-sm-5 col-form-label">Номер семестру</label>
+                            <div class="col-sm-7 btn-group btn-group-toggle" data-toggle="buttons" id="numberRadios">
+                                <label class="btn btn-secondary" ng-click="newSemester.number = 1">
+                                    <input type="radio" name="radioBtns" autocomplete="off" checked required> I</input>
+                                </label>
+                                <label class="btn btn-secondary" ng-click="newSemester.number = 2">
+                                    <input type="radio" name="radioBtns" autocomplete="off" required> II</input>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="startDate" class="col-sm-5 col-form-label">Дата початку</label>
+                            <div class="col-sm-7">
+                                <input class="form-control" type="date" id="startDate" ng-model="newSemester.startDate" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="study-year" class="col-sm-5 col-form-label">Дата кінця</label>
+                            <div class="col-sm-7">
+                                <input class="form-control" type="date" id="endDate" ng-model="newSemester.endDate" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" ng-disabled="addSemesterForm.$invalid" ng-click="confirmAddSemester()">Додати</button>
+                    <button type="button" class="btn btn-secondary" ng-click="cancelAddSemester()">Відмінти</button>
                 </div>
             </div>
         </div>

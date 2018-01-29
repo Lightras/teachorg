@@ -216,3 +216,93 @@ app.controller('NavbarController', ['$scope', '$location', function($scope, $loc
         $scope.hideNavbar = false;
    }
 }])
+
+app.controller('SemestersController', ['$scope', '$rootScope', function($scope, $rootScope){
+    var csrf = $("[name='csrfmiddlewaretoken']").val();
+    console.log(csrf)
+    var today = new Date();
+    var year = today.getFullYear();
+
+    $scope.dateObj = new Date()
+
+    $scope.years = [year - 1, year, year + 1];
+
+    $scope.showAddSemesterModal = function() {
+        $('#add-semester-modal').modal()
+    }
+
+    $scope.confirmAddSemester = function() {
+        console.log('$scope.newSemester', $scope.newSemester);
+
+        $.ajax({
+            type: 'POST',
+            data: {
+                'csrfmiddlewaretoken': csrf,
+                'start_date': $scope.newSemester.start_date,
+                'end_date': $scope.newSemester.end_date,
+                'year': $scope.newSemester.year,
+                'number': $scope.newSemester.number
+            }
+        }).done(function(response){
+
+        }).fail(function(error){
+
+        }).always(function(){
+            $('#add-semester-modal').modal('hide')
+        })
+
+        console.log($scope.newSemester)
+        $scope.semesters.push($scope.newSemester)
+        $scope.newSemester = undefined;
+    }
+
+    $scope.cancelAddSemester = function(){
+        $scope.newSemester = undefined;
+        $('#add-semester-modal').modal('hide')
+    }
+
+    $scope.semesters = [
+        {
+            end_date: "2018-12-31",
+            id: 21,
+            is_active: true,
+            number: 1,
+            start_date: "2018-09-01",
+            year: 2018,
+        },
+        {
+            end_date: "2019-05-31",
+            id: 22,
+            is_active: false,
+            number: 2,
+            start_date: "2019-01-10",
+            year: 2018,
+        },
+        {
+            end_date: "2019-12-31",
+            id: 23,
+            is_active: false,
+            number: 1,
+            start_date: "2019-09-01",
+            year: 2019
+        }
+    ]
+
+    $.ajax({
+        type: 'POST',
+        url: $rootScope.baseUrl + '/semestersdata/',
+        data: {
+            'csrfmiddlewaretoken': csrf
+        },
+    }).done(function(response){
+        console.log(response)
+        $scope.$apply(function(){
+//            $scope.semesters = response;
+        })
+
+    }).fail(function(error){
+
+    }).always(function(){
+
+    })
+}])
