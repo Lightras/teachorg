@@ -90,6 +90,10 @@ def registration(request):
         #con.commit()
         user = User.objects.create_user(username, 'email@gmail.com', password)
         user.save()
+        start_date = datetime.datetime.strptime('01.09.2018', '%d.%m.%Y').date()
+        end_date = datetime.datetime.strptime('31.12.2018', '%d.%m.%Y').date()
+        sem = Semester(year=2018, number=1, user=user, start_date=start_date ,end_date=end_date ,is_active=True)
+        sem.save()
         return redirect('login')
     return render(request, 'registration2.html')
 
